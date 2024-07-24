@@ -17,7 +17,10 @@
     <header>
         <nav>
             <div class="container">
-                <h1>Fictional Store</h1>                
+                <h1>Fictional Store</h1>
+                <div class="botao-menu">
+                    <button type="button">Abrir menu</button>
+                </div>
                 <ul class="menu">
                     <li>
                         <a href="#">Sobre a loja</a>
@@ -25,7 +28,7 @@
                             <li><a href="#">Quem somos</a></li>
                             <li><a href="#">Nossas políticas</a></li>
                             <li><a href="#">História</a></li>
-                            <li><a href="#">Nossa missão</a></li>
+                            <li><a href="#">Nossos Parceiros</a></li>
                         </ul>
                     </li>
                     <li>
@@ -37,50 +40,51 @@
                         </ul>
                     </li>
                 </ul>
-                <form>
-                    <input type="search" placeholder="Buscar">
-                    <button type="submit">Pesquisar</button>
-                </form>
+                
             </div>
-            <div class="botao-menu">
-                <button type="button">Abrir menu</button>
-            </div>
-            
         </nav>
     </header>
     <section class="sobre">
-        <div class="container">
-            <div class="sobre-texto">
-                <img src="https://placehold.co/420x360" alt="Imagem da loja">
-                <h2>Sobre a loja:</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugit, porro nobis voluptatibus iusto ratione adipisci blanditiis.
-                    Ipsam, autem? Amet unde voluptates odit illum asperiores maiores, suscipit hic molestias culpa.
-                    Nulla!
-                </p>
+        <div class="container-sobre">            
+                <img src="https://placehold.co/420x360" alt="Imagem da loja">            
+                <div class="sobre">
+                    <h2>Sobre a loja:</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugit, porro nobis voluptatibus iusto ratione adipisci blanditiis.
+                        Ipsam, autem? Amet unde voluptates odit illum asperiores maiores, suscipit hic molestias culpa.
+                        Nulla!
+                    </p>
+                </div>                  
+
             </div>
-        </div>
     </section>
-    <section class="produtos">
-        <!-- Aqui você pode adicionar os produtos da loja -->
-         <class class="container">
+    <section class="produtos">        
+        <class class="container">
             <img src="https://placehold.co/180x120" alt="" srcset="">
             <h3>Produto </h3>
-         </class>
-         <class class="container">
+        </class>
+        <class class="container">
             <img src="https://placehold.co/180x120" alt="" srcset="">
             <h3>Produto </h3>
-         </class>
-         <class class="container">
+        </class>
+        <class class="container">
             <img src="https://placehold.co/180x120" alt="" srcset="">
             <h3>Produto </h3>
-         </class>
-         <class class="container">
+        </class>
+        <class class="container">
             <img src="https://placehold.co/180x120" alt="" srcset="">
             <h3>Produto </h3>
-         </class>
+        </class>
     </section>
 </body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('.botao-menu button').click(function(){
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
 
 </html>
